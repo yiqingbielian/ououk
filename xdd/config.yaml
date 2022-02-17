@@ -1,0 +1,54 @@
+    mode: balance
+containers:
+  - address: http://127.0.0.1:5700
+    cid: 
+    secret: 
+    weigth: 999
+    mode: balance
+    limit: 999
+    resident: 
+  - address: http://127.0.0.1:5701
+    cid: 
+    secret: 
+    weigth: 999
+    mode: balance
+    limit: 999
+    resident: jd_
+##  - address: http://127.0.0.1:5702
+##    username: ououk
+##    password: 112233..
+##    cid: 
+##    secret: 
+##    weigth: 999
+##    mode: balance
+##    limit: 54
+Priority: 200 #代表200优先级以上是主账号，200以下为工具人账号
+AtTime: 2 #填写1-12之间的数  填错自负默认为10  10点容易出现高峰超时。
+IsHelp: false  #是否助力填写true或者false  false
+IsOldV4: false #填写true或者false  false是否新版或者旧版V4
+##Jdcurl:  #Nvjdc访问地址，内部版短信登录专用
+ApiToken:  #设置短信接口token
+Wskey: # 填空默认禁用wskey转换 需要的填true
+IsAddFriend: true #填写true或者false  自动同意好友
+Lim: 3 #填写1-N 代表限制查询次数
+Later: 1 #延时防止黑IP自己设置 默认60 不怕黑的改为1即可 单位是秒
+Tyt: 500 #填写1-N 代表推一推需要的互助值，默认为8
+theme: https://ghproxy.com/https://raw.githubusercontent.com/764763903a/xdd-plus/main/theme/admin.html
+static: ./static
+master: 112233..
+database:  xdd:password@tcp(127.0.0.1:3306)/xdd?charset=utf8mb4&parseTime=True&loc=Local
+qywx_key:
+daily_push:
+resident:  #均衡模式下所有容器共同的账号pin，有多个用'&'拼接。
+user_agent:
+telegram_bot_token: 
+telegram_user_id: 
+TGURL:  #填写TG代理地址参考https://www.kejiwanjia.com/server/5221.html#3worker
+qquid: 
+qqgid: 
+qbot_public_mode: true #qq机器人群聊模式，默认false私聊模式
+default_priority: 1 #新用户默认优先级
+no_ghproxy: true #更新资源是否不使用代理 默认false
+daily_asset_push_cron:
+#repos:
+#  - git: https://github.com/shufflewzc/faker2.git
